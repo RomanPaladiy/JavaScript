@@ -4,7 +4,7 @@ document.write(3+15);
 //This is utilizing the window.alert method.
 window.alert('This is an alert!');
 
-//Contatenation.
+//Concatenation.
 document.write("The more you practice writing Javascript code,"
 + " the easier future assignments will be.");
 
@@ -13,3 +13,6 @@ document.write(5*25);
 
 //Font-color, On HTMl File
 
+// Variable Concatenation
+var Family = "The Paladiys", Dad = "Leo", Son = "Roman";
+document.write(Dad, Son);
