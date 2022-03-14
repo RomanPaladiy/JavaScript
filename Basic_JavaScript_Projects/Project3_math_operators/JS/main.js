@@ -27,3 +27,25 @@ function modulus_Operator()  {
     var simple_Math = 25 % 6;
     document.getElementById("Math6").innerHTML = "When you divide 25 by 6 you have a remainder of: " + simple_Math;
 }
+
+function negation_Operator()  {
+    var x = 15;
+    document.getElementById("Math7").innerHTML = -x; 
+}
+
+function Increment_Number()  {
+var x = 5;
+x++;
+document.write(x);
+document.getElementById("Increment").innerHTML = '5' + x++;
+}
+
+function Decrement_Number()  {
+var x = 5.25; 
+x--;
+document.write(x);
+document.getElementById("Decrement").innerHTML = '5' + x--;
+}
+
+window.alert(Math.random() * 100);
+document.getElementById("RandomMath").innerHTML = Math.random;
