@@ -16,16 +16,16 @@ var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
 var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
 var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
 function myFunction()  {
-    document.getElementById("Keywords_and_Constructors").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year;
+    document.getElementById("New_and_This").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year;
  }
  
 // This is a nested function
  function count_Function()  {
-     document.getElementById("Nested_Function").innerHTML = Count();
+     document.getElementById("Counting").innerHTML = Count();
      function Count()  {
          var Starting_point = 9;
          function Plus_one()  {Starting_point += 1;}
          Plus_one();
          return Starting_point;
-     }
+    }
  }
