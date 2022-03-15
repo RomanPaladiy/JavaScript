@@ -19,3 +19,13 @@ function myFunction()  {
     document.getElementById("Keywords_and_Constructors").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year;
  }
  
+// This is a nested function
+ function count_Function()  {
+     document.getElementById("Nested_Function").innerHTML = Count();
+     function Count()  {
+         var Starting_point = 9;
+         function Plus_one()  {Starting_point += 1;}
+         Plus_one();
+         return Starting_point;
+     }
+ }
