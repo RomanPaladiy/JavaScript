@@ -20,7 +20,7 @@ function myFunction()  {
  }
  
 // This is a nested function
- function count_Function()  {
+ function count_function()  {
      document.getElementById("Counting").innerHTML = Count();
      function Count()  {
          var Starting_point = 9;
