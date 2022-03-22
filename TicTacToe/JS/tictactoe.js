@@ -34,7 +34,7 @@ function placeXOrO(squareNumber) {
             activePlayer = 'X';
         }
         //This function plays placement sound.
-        Audio('./Media/place.mp3');
+        audio('./Media/place.mp3');
         //This condition checks to see if it is computers turn.
         if(activePlayer === 'O') {
             //This function disables clicking for computer choice.
@@ -53,7 +53,7 @@ function placeXOrO(squareNumber) {
         //This variable stores a random number 0-8.
         let pickASquare;
         //This condition allows our while loop to keep trying if a square is selected already.
-        while(!success){
+        while(!success) {
             //A random number between 0 a 8 is selected.
             pickASquare = String(Math.floor(Math.random() * 9));
             //If the random number evaluated returns true, the sqaure hasn't been selected yet.
@@ -91,7 +91,7 @@ function checkWinConditions() {
     //squares are selected the code executes.
     else if (selectedSquares.length >= 9) {
         //This function plays the tie game sound.
-        Audio('./Media/tie.mp3');
+        audio('./Media/tie.mp3');
         //This function sets a .3 second timer before the resetGame is called.
         setTimeout(function () { resetGame(); }, 1000);
     }
@@ -120,7 +120,7 @@ function disableClick() {
 //placement sound ('./media/place.mp3')
 function audio(audioURL) {
     // We create a new audio object and we pass the path as a parameter.
-    let audio = new audio(audioURL);
+    let audio = new Audio(audioURL);
     //Play method plays our audio sound.
     audio.play();
 }
@@ -160,7 +160,7 @@ function animateLineDrawing() {
     //This method sets the width of our line.
     c.lineWidth = 10;
     //This method sets the color of our line.
-    c.strokeStyle = 'rgba(70, 255, 33, ,8)';
+    c.strokeStyle = 'rgba(70, 255, 33, , .8)';
     //This method draws everything we laid out above.
     c.stroke();
     //This condition checks if we've reached the endpoint.
