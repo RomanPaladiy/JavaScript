@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<!-- The code underneath lists the content to show up on the html page, and using the jquery functions which modifies the 
+color and makes the targeted 'h1' tag hide.-->
+<script>
+
+$(document).ready(function() {
+    $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+            </div>\
+        </div>\
+    </body>"             
+    );
+    $("#2").css({"color":"red"});
+    $("#3").click(function() {
+        $('h1').hide().fade();
+    });
+});
+
+
+</script>
+</html>
