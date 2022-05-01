@@ -54,7 +54,7 @@ function show() {
 
     };
     
-    hmtl += '</ul>';
+    html += '</ul>';
     /*This displays the task as a list*/
     document.getElementById('todos').innerHTML = html;
 
