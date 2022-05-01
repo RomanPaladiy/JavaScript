@@ -40,7 +40,7 @@ function show() {
         /* This also displays the task as a list and creates the button with the 'x'*/
         html += '<li>' + todos[i] + '<button class="remove" id="' + i +'">x</button></li>';
 
-    /*This creates teh funcationality of removing a todo item from the array*/
+    /*This creates the funcationality of removing a todo item from the array*/
     function remove () {
         var id = this.getAttribute('id');
         var todos = get_todos();
