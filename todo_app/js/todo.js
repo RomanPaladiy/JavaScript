@@ -41,7 +41,7 @@ function show() {
         html += '<li>' + todos[i] + '<button class="remove" id="' + i +'">x</button></li>';
 
     /*This creates the funcationality of removing a todo item from the array*/
-    function remove () {
+    function remove() {
         var id = this.getAttribute('id');
         var todos = get_todos();
         todos.splice(id, 1);
@@ -52,7 +52,7 @@ function show() {
         return false;
     }
 
-    };
+        };
     
     html += '</ul>';
     /*This displays the task as a list*/
@@ -62,4 +62,4 @@ function show() {
 /*This displays the inputed task when the 'Add item' button is clicked*/
 document.getElementById('add').addEventListener('click', add);
 /* This will keep the inputs displayed permantaly on the screen*/
-show();
+show()
